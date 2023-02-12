@@ -1,3 +1,58 @@
+"""def convert_units(value, from_unit, to_unit):
+    if from_unit == 'kg' and to_unit == 'gm':
+        return value * 1000
+    elif from_unit == 'gm' and to_unit == 'kg':
+        return value / 1000
+    elif from_unit == 'ft' and to_unit == 'in':
+        return value * 12
+    elif from_unit == 'in' and to_unit == 'ft':
+        return value / 12
+    else:
+        return "Invalid conversion"
+
+value = float(input("Enter the value to be converted: "))
+from_unit = input("Enter the unit to convert from (kg/gm, ft/in): ")
+to_unit = input("Enter the unit to convert to (kg/gm, ft/in): ")
+result = convert_units(value, from_unit, to_unit)
+
+print("The converted value is: ", result, to_unit)
+
+
+
+def print_table_of_37():
+    for i in range(1, 11):
+        print("37 x {} = {}".format(i, 37 * i))
+
+print("Table of 37:")
+print_table_of_37()
+"""
+
+from fractions import Fraction
+
+def perform_operation(fraction1, fraction2, operation):
+    if operation == '+':
+        result = fraction1 + fraction2
+    elif operation == '-':
+        result = fraction1 - fraction2
+    elif operation == '*':
+        result = fraction1 * fraction2
+    elif operation == '/':
+        result = fraction1 / fraction2
+    else:
+        return "Invalid operation"
+
+    return result
+
+fraction1 = Fraction(input("Enter the first fraction (numerator/denominator): "))
+fraction2 = Fraction(input("Enter the second fraction (numerator/denominator): "))
+operation = input("Enter the operation to perform (+, -, *, /): ")
+result = perform_operation(fraction1, fraction2, operation)
+
+print("The result is: ", result)
+
+
+
+
 //q1
 
 import java.applet.Applet;
